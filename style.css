@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='800' preserveAspectRatio='none' viewBox='0 0 1920 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1258%26quot%3b)' fill='none'%3e%3crect width='1920' height='800' x='0' y='0' fill='rgba(24%2c 22%2c 22%2c 1)'%3e%3c/rect%3e%3cpath d='M -228.9196224197433%2c255 C -36.92%2c313.4 347.08%2c533.6 731.0803775802567%2c547 C 1115.08%2c560.4 1307.08%2c324.6 1691.0803775802567%2c322 C 2075.08%2c319.4 2605.3%2c518.8 2651.080377580257%2c534 C 2696.86%2c549.2 2066.22%2c425.2 1920%2c398' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -899.3503315210539%2c170 C -707.35%2c232 -323.35%2c452.8 60.649668478946026%2c480 C 444.65%2c507.2 636.65%2c290.2 1020.6496684789461%2c306 C 1404.65%2c321.8 1800.78%2c588.8 1980.649668478946%2c559 C 2160.52%2c529.2 1932.13%2c237.4 1920%2c157' stroke='rgba(33%2c 30%2c 30%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -305.31391412954736%2c504 C -113.31%2c455.4 270.69%2c265.4 654.6860858704526%2c261 C 1038.69%2c256.6 1230.69%2c480.8 1614.6860858704526%2c482 C 1998.69%2c483.2 2513.62%2c229.4 2574.6860858704526%2c267 C 2635.75%2c304.6 2050.94%2c589.4 1920%2c670' stroke='rgba(33%2c 30%2c 30%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -981.1883449458207%2c655 C -789.19%2c578.2 -405.19%2c268.6 -21.188344945820745%2c271 C 362.81%2c273.4 554.81%2c691.4 938.8116550541793%2c667 C 1322.81%2c642.6 1702.57%2c194.4 1898.8116550541793%2c149 C 2095.05%2c103.6 1915.76%2c381.8 1920%2c440' stroke='rgba(33%2c 30%2c 30%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1752.184623889681%2c315 C -1560.18%2c377.2 -1176.18%2c655.6 -792.1846238896811%2c626 C -408.18%2c596.4 -216.18%2c194.2 167.81537611031888%2c167 C 551.82%2c139.8 777.38%2c454.8 1127.815376110319%2c490 C 1478.25%2c525.2 1761.56%2c372.4 1920%2c343' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1633.9092101442814%2c583 C -1441.91%2c540 -1057.91%2c375.4 -673.9092101442814%2c368 C -289.91%2c360.6 -97.91%2c587 286.09078985571864%2c546 C 670.09%2c505 919.31%2c185.6 1246.0907898557186%2c163 C 1572.87%2c140.4 1785.22%2c379 1920%2c433' stroke='rgba(33%2c 30%2c 30%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1258'%3e%3crect width='1920' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin: 30px 0 80px 0;
+  font-family: "DynaPuff", cursive;
+}
+
+.title h1,
+.title p {
+  color: #fafafa;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.input-box {
+  position: relative;
+}
+
+#input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  width: 600px;
+  background-color: #e0e0e0;
+  font-size: 1.2rem;
+  color: #272927;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#input:focus {
+  outline: none;
+}
+
+#addBtn {
+  padding: 14px;
+  color: #272927;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 800;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+#addBtn:hover {
+  transform: translateY(-1px);
+}
+
+.result-box {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.result-box li {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.178);
+  border-radius: 10px;
+  list-style-type: none;
+  color: #e0e0e0;
+}
+
+.result-box li p {
+  display: inline;
+}
+
+.result-box li p.active {
+  text-decoration: line-through;
+  color: #e0e0e0a6;
+}
+
+.check {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #e0e0e0;
+}
+
+#deleteBtn {
+  margin-top: 3px;
+  font-size: 1.2rem;
+  float: right;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.result-box li.active {
+  text-decoration: line-through;
+  color: #e0e0e073;
+}
+
+@media all and (max-width: 900px) {
+  #addBtn,
+  .result-box li i {
+    cursor: default;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #input {
+    width: 500px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #input {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #input {
+    width: 370px;
+  }
+}
